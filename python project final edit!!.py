@@ -254,6 +254,17 @@ def show_enchanted_ballroom():
     elif user_input == "leave":
         print("What rotten luck! Let's head back quickly.")
         level2()
+def replay():
+    print("\n")
+    print(f"The End Is Just A New Beginning {player_name}.")
+    print("would you like to relive the adventure?"+"\n"+"(yup/nah)")
+    decision=input("enter yup or nah  : ")
+    if decision.lower()=='yup':
+        print("\n"+"yay! let us explore more!")
+        stage1()
+    else:
+        print("thankyou for being there with ous on the journey")
+        sys.exit()
 
 def show_mesmerizing_gardens():
     print("How beautiful! How have the flowers not wilted?")
@@ -270,7 +281,7 @@ def show_mesmerizing_gardens():
         print("I was never killed in the cursed castle why did the people who went to uncover the secrets of castle never return?")
         print("you wake up next day to find no treasure around you..... 'WAIT NO TREASURE?????' You find a note by your bed that reads 'Evidence is the only way to plead the truth'and then... you hear hysterical laughter HAHAHAHA ")
         print("THE END THANK YOU FOR PLAYING THE CURSED CASTLE A NEW ADVENTURE AWAITS YOU")
-        sys.exit()
+        replay()
         
     elif user_input == "leave":
         print("What rotten luck! Let's head back quickly.")
