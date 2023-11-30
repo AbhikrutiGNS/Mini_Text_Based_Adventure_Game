@@ -263,7 +263,7 @@ def replay():
         print("\n"+"yay! let us explore more!")
         stage1()
     else:
-        print("thankyou for being there with ous on the journey")
+        print("thankyou for being there with us on the journey")
         sys.exit()
 
 def show_mesmerizing_gardens():
