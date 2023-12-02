@@ -262,9 +262,13 @@ def replay():
     if decision.lower()=='yup':
         print("\n"+"yay! let us explore more!")
         stage1()
-    else:
-        print("thankyou for being there with us on the journey")
+    elif decision.lower()=='nah':
+        print("thank you for being with us on this journey! We would love to have you back.")
         sys.exit()
+    else:
+        print("huh? I did'nt get you? Please try again later.")
+        print("\n"+"Now Reloading.......")
+        replay()
 
 def show_mesmerizing_gardens():
     print("How beautiful! How have the flowers not wilted?")
