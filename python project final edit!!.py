@@ -263,7 +263,7 @@ def replay():
         print("\n"+"yay! let us explore more!")
         stage1()
     elif decision.lower()=='nah':
-        print("thank you for being with us on this journey! We would love to have you back.")
+        print(f"thankyou for being there with us on this wonderful journey {player_name}"+"\n"+"we would love to have you again!")  
         sys.exit()
     else:
         print("huh? I did'nt get you? Please try again later.")
